@@ -5,10 +5,6 @@ const articleRoutes = require('../routes/articleRoutes');
 const app = express();
 const PORT = 3000;
 
-// Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
 // Root route
 app.get('/', (req, res) => {
   res.send('Get root route');
